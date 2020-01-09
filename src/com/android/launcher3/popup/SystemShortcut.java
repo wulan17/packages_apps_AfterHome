@@ -31,6 +31,7 @@ import android.os.UserHandle;
 import android.net.Uri;
 import android.os.RemoteException;
 import android.util.Log;
+import android.view.InflateException;
 import android.view.View;
 import android.view.WindowInsets;
 import android.view.accessibility.AccessibilityNodeInfo;
@@ -50,6 +51,7 @@ import com.android.launcher3.R;
 import com.android.launcher3.SecondaryDropTarget;
 import com.android.launcher3.Utilities;
 import com.android.launcher3.allapps.PrivateProfileManager;
+import com.android.launcher3.customization.InfoBottomSheet;
 import com.android.launcher3.model.WidgetItem;
 import com.android.launcher3.model.data.ItemInfo;
 import com.android.launcher3.model.data.WorkspaceItemInfo;
@@ -203,12 +205,24 @@ public abstract class SystemShortcut<T extends ActivityContext> extends ItemInfo
             }
         }
 
+
         @Override
         public void onClick(View view) {
+            InfoBottomSheet cbs;
             dismissTaskMenuView(mTarget);
             Rect sourceBounds = Utilities.getViewBounds(view);
-            new PackageManagerHelper(view.getContext()).startDetailsActivityForInfo(
-                    mItemInfo, sourceBounds, ActivityOptions.makeBasic().toBundle());
+            try {
+                cbs = (InfoBottomSheet) mTarget.getLayoutInflater().inflate(
+                        R.layout.app_info_bottom_sheet,
+                        mTarget.getDragLayer(),
+                        false);
+                cbs.configureBottomSheet(sourceBounds, view.getContext());
+                cbs.populateAndShow(mItemInfo);
+            } catch (InflateException e) {
+                new PackageManagerHelper(view.getContext()).startDetailsActivityForInfo(
+                        mItemInfo, sourceBounds, ActivityOptions.makeBasic().toBundle());
+            }
+
             mTarget.getStatsLogManager().logger().withItemInfo(mItemInfo)
                     .log(LAUNCHER_SYSTEM_SHORTCUT_APP_INFO_TAP);
         }
