@@ -296,7 +296,7 @@ public class QsbContainerView extends FrameLayout {
         }
 
         public boolean isQsbEnabled() {
-            return Utilities.showSmartspace(getContext()) && !shouldShowFirstPageWidget();
+            return false;
         }
 
         protected Bundle createBindOptions() {

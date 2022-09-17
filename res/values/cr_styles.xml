@@ -16,9 +16,12 @@
 -->
 <resources>
 
-    <!-- Appseat -->
-    <color name="appseat_color">@*android:color/system_neutral2_50</color>
+    <!-- QuickSpace -->
+    <style name="QuickSpaceText">
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
+    </style>
 
-    <!-- Logo Color -->
-    <color name="afterlife_logo_icon_color">?android:attr/textColorPrimary</color>
+    <style name="QuickSpaceSubText">
+        <item name="android:fontFamily">@*android:string/config_bodyFontFamily</item>
+    </style>
 </resources>
