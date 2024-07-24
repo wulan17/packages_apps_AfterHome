@@ -144,13 +144,13 @@ public abstract class SystemShortcut<T extends ActivityContext> extends ItemInfo
 
     public static class Widgets<T extends ActivityContext> extends SystemShortcut<T> {
         public Widgets(T target, ItemInfo itemInfo, @NonNull View originalView) {
-            super(R.drawable.ic_widget, R.string.widget_button_text, target, itemInfo,
-                    originalView);
+            super(R.drawable.ic_widget, R.string.widget_button_text, target, itemInfo, originalView);
         }
 
-        @Override
-        public void onClick(View view) {
-            if (!Utilities.isWorkspaceEditAllowed(mTarget.getApplicationContext())) return;
+	@Override
+	public void onClick(View view) {
+            // Cast mTarget to Context to call getApplicationContext()
+            if (!Utilities.isWorkspaceEditAllowed(((Context) mTarget).getApplicationContext())) return;
             AbstractFloatingView.closeAllOpenViews(mTarget);
             WidgetsBottomSheet widgetsBottomSheet =
                     (WidgetsBottomSheet) mTarget.getLayoutInflater().inflate(
