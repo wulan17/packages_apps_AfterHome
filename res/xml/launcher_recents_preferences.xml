@@ -62,13 +62,6 @@
             android:defaultValue="true"
             android:persistent="true"
             launcher:iconSpaceReserved="false" />
-
-        <SwitchPreference
-            android:key="pref_recents_lock"
-            android:title="@string/recents_lock_title"
-            android:defaultValue="true"
-            android:persistent="true"
-            launcher:iconSpaceReserved="false" />
     </PreferenceCategory>
 
 </androidx.preference.PreferenceScreen>
