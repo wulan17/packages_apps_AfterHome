@@ -22,7 +22,7 @@
      <string name="google_folder_title" translatable="false">Google</string>
 
      <!-- General -->
-     <string name="settings_title">Home settings</string>
+     <string name="settings_title">AfterHome settings</string>
 
      <!-- Categories -->
      <string name="home_category_title">Home screen</string>
@@ -55,7 +55,9 @@
 
      <!-- Hide labels -->
      <string name="desktop_show_labels">Icon labels on desktop</string>
+     <string name="desktop_show_labels_summary">Show Icon labels on desktop screen</string>
      <string name="drawer_show_labels">Icon labels in drawer</string>
+     <string name="drawer_show_labels_summary">Show icon labels in App Drawers</string>
 
      <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
      <string name="title_show_google_app">Swipe to access Google app</string>
@@ -69,6 +71,7 @@
 
      <!-- Trust apps -->
      <string name="trust_apps_manager_name">Hidden &amp; Protected apps</string>
+     <string name="trust_apps_manager_name_summary">Show, Hide, &amp; Lock your apps for privacy</string>
      <string name="trust_apps_auth_manager">Unlock to manage the hidden and protected apps</string>
      <string name="trust_apps_auth_open_app">Authenticate to open %1$s</string>
      <string name="trust_apps_loading">Loading\u2026</string>
@@ -146,9 +149,11 @@
 
      <!-- Homescreen Statusbar -->
      <string name="show_statusbar_title">Status Bar</string>
+     <string name="show_statusbar_summary">Show Status Bar in home screen</string>
 
      <!-- Top shadow -->
      <string name="show_top_shadow">Top shadow</string>
+     <string name="show_top_shadow_summary">Show top shadow in home screen layout</string>
 
      <!-- Row Height -->
      <string name="row_height_title">Row height</string>
@@ -156,6 +161,7 @@
      <!-- Memory info -->
      <string name="meminfo_text">%1$s available | %2$s</string>
      <string name="recents_meminfo_title">Memory info</string>
+     <string name="recents_meminfo_summary">Show Memory info on recent apps</string>
 
      <!-- Background blur -->
      <string name="background_blur_title">Background blur depth</string>
@@ -163,9 +169,13 @@
 
      <!-- Recents icons -->
      <string name="recents_screenshot_title">Screenshot</string>
+     <string name="recents_screenshot_summary">Show Screenshot button on recent apps</string>
      <string name="recents_clear_all_title">Clear all</string>
+     <string name="recents_clear_all_summary">Show Clear all button on recent apps</string>
      <string name="recents_lens_title">Lens</string>
+     <string name="recents_lens_summary">Show Google Lens button on recent apps</string>
      <string name="recents_lock_title">Pin app</string>
+     <string name="recents_lock_summary">Show Pin app button on recent apps</string>
 
      <!-- All apps themed icons -->
      <string name="pref_themed_icons_title">Themed icons</string>
@@ -227,8 +237,8 @@
     <string name="quickspace_date_format_minimalistic" translatable="false">EEEE, MMMM d</string>
 
     <!-- QuickSpace: QuickEvent: Device Intro Event -->
-    <string name="quick_event_rom_intro_welcome">Welcome to crDroid!</string>
-    <string name="quick_event_rom_intro_welcome_ext">crDroid time!</string>
+    <string name="quick_event_rom_intro_welcome">Welcome to AfterlifeOS!</string>
+    <string name="quick_event_rom_intro_welcome_ext">AfterlifeOS time!</string>
     <string-array name="welcome_message_variants">
         <item>Thank you for choosing us</item>
         <item>Loving us? Send us a beer</item>
@@ -375,12 +385,12 @@
         <item>Oh hey, what\'s up?</item>
         <item>Focus on your tasks</item>
         <item>How many screenshots do you take?</item>
-        <item>Open goodness with crDroid</item>
+        <item>Open goodness with AfterlifeOS</item>
         <item>Spread love, not havoc</item>
         <item>We didn\'t start the fire!</item>
         <item>Time for some good music</item>
         <item>\u003C\u003C\u003C\u003C\u003C\u003C\u003C HEAD</item>
-        <item>You need crDroid Premium to see this</item>
+        <item>You need AfterlifeOS Premium to see this</item>
         <item>Remember the Lineage of the Unicorn</item>
         <item>Enjoy Xtended battery life</item>
         <item>Starting from the ground zero</item>

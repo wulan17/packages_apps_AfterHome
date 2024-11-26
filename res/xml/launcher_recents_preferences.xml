@@ -34,9 +34,11 @@
         <SwitchPreference
             android:key="pref_recents_meminfo"
             android:title="@string/recents_meminfo_title"
+            android:summary="@string/recents_meminfo_summary"
             android:defaultValue="false"
             android:persistent="true"
-            launcher:iconSpaceReserved="false" />
+            launcher:iconSpaceReserved="false"
+            launcher:layout="@layout/afl_preference_single" />
    </PreferenceCategory>
 
     <PreferenceCategory
@@ -45,30 +47,38 @@
         <SwitchPreference
             android:key="pref_recents_screenshot"
             android:title="@string/recents_screenshot_title"
+            android:summary="@string/recents_screenshot_summary"
             android:defaultValue="true"
             android:persistent="true"
-            launcher:iconSpaceReserved="false" />
+            launcher:iconSpaceReserved="false"
+            launcher:layout="@layout/afl_preference_top" />
 
         <SwitchPreference
             android:key="pref_recents_lens"
             android:title="@string/recents_lens_title"
+            android:summary="@string/recents_lens_summary"
             android:defaultValue="false"
             android:persistent="true"
-            launcher:iconSpaceReserved="false" />
+            launcher:iconSpaceReserved="false"
+            launcher:layout="@layout/afl_preference_middle" />
         
         <SwitchPreferenceCompat
             android:key="pref_recents_lock"
             android:title="@string/recents_lock_title"
+            android:summary="@string/recents_lock_summary"
             android:defaultValue="true"
             android:persistent="true"
-            launcher:iconSpaceReserved="false" />
+            launcher:iconSpaceReserved="false"
+            launcher:layout="@layout/afl_preference_middle" />
 
         <SwitchPreference
             android:key="pref_recents_clear_all"
             android:title="@string/recents_clear_all_title"
+            android:summary="@string/recents_clear_all_summary"
             android:defaultValue="true"
             android:persistent="true"
-            launcher:iconSpaceReserved="false" />
+            launcher:iconSpaceReserved="false"
+            launcher:layout="@layout/afl_preference_bottom" />
     </PreferenceCategory>
 
 </androidx.preference.PreferenceScreen>
