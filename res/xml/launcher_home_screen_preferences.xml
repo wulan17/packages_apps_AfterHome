@@ -77,6 +77,14 @@
             launcher:layout="@layout/afl_preference_middle" />
 
         <SwitchPreference
+            android:key="pref_enable_minus_one"
+            android:title="@string/title_show_google_app"
+            android:summary="@string/pref_show_google_now_summary"
+            android:defaultValue="true"
+            launcher:iconSpaceReserved="false" 
+            launcher:layout="@layout/afl_preference_middle" />
+
+        <SwitchPreference
             android:key="pref_single_page_center"
             android:title="@string/single_page_center_title"
             android:summary="@string/single_page_center_summary"
